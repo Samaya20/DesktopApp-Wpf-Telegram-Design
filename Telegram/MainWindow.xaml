@@ -1,0 +1,281 @@
+﻿<Window x:Class="Telegram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Telegram"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <!-- Main Grid initialize start -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!-- Main Grid initialize end -->
+
+        <!-- Left side Grid content start -->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!-- Left side menubar and search textbox start -->
+
+            <DockPanel Grid.Row="0" Background="White" VerticalAlignment="Center">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <fa:ImageAwesome Grid.Column="0" Icon="Bars" Width="20" Height="20" Foreground="#9D9D9F"/>
+                    <TextBox Grid.Column="1" Text="Search" BorderThickness="0" FontSize="15" Padding="10" Margin="0 10 40 10" Foreground="#9D9D9F" Background="#F1F1F1"/>
+                </Grid>
+            </DockPanel>
+
+            <!-- Left side menubar and search textbox end -->
+
+            <!-- Left side Chats panel start -->
+
+            <DockPanel Grid.Row="1">
+                <!-- Chats Inner Grid initiaize start -->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" Background="#3B9DDA">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Width="40" Height="40" CornerRadius="50" Background="#E56E70">
+                            <Label Content="ES" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="White"/>
+                        </Border>
+
+                        <Label Grid.Column="1" Content="Eva Summer" FontWeight="DemiBold" FontSize="15" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Label Grid.Column="1" Content="Reminds me of a Chinese prover.." FontSize="12" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                        <Label Grid.Column="1" Content="11:00" FontSize="12" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="top" Margin="0 0 10 10"/>
+                        <fa:ImageAwesome Grid.Column="1" Icon="ThumbTack" VerticalAlignment="Bottom" HorizontalAlignment="Right" Foreground="White" Width="10" Height="10" Margin="0 10 20 10"/>
+                    </Grid>
+
+                    <Grid Grid.Row="1" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Width="40" Height="40" CornerRadius="50" Background="#FBA86F">
+                            <Label Content="AS" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="White"/>
+                        </Border>
+
+                        <Label Grid.Column="1" Content="Alexandra Smith" FontWeight="DemiBold" FontSize="15" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Label Grid.Column="1" Content="This is amazing!" FontSize="12" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                        <Label Grid.Column="1" Content="10:00" FontSize="12" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="top" Margin="0 0 10 10"/>
+                        <fa:ImageAwesome Grid.Column="1" Icon="Circle" VerticalAlignment="Bottom" HorizontalAlignment="Right" Foreground="#3B9DDA" Width="10" Height="10" Margin="0 10 20 10"/>
+                    </Grid>
+
+                    <Grid Grid.Row="2" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Width="40" Height="40" CornerRadius="50" Background="#E5CB72">
+                            <Label Content="MA" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="White"/>
+                        </Border>
+
+                        <Label Grid.Column="1" Content="Mike Apple" FontWeight="DemiBold" FontSize="15" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Label Grid.Column="1" Content="Hello dear.." FontSize="12" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                        <Label Grid.Column="1" Content="07:00" FontSize="12" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="top" Margin="0 0 10 10"/>
+                        <fa:ImageAwesome Grid.Column="1" Icon="Circle" VerticalAlignment="Bottom" HorizontalAlignment="Right" Foreground="#3B9DDA" Width="10" Height="10" Margin="0 10 20 10"/>
+                    </Grid>
+
+                    <Grid Grid.Row="3" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Width="40" Height="40" CornerRadius="50" Background="#7AC95C">
+                            <Label Content="EC" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="White"/>
+                        </Border>
+
+                        <Label Grid.Column="1" Content="@ Evening Club" FontWeight="DemiBold" FontSize="15" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Label Grid.Column="1" Content="Eva: Photo" FontSize="12" Foreground="#3B9DDA" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                        <Label Grid.Column="1" Content="21:00" FontSize="12" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="top" Margin="0 0 10 10"/>
+                        <fa:ImageAwesome Grid.Column="1" Icon="Circle" VerticalAlignment="Bottom" HorizontalAlignment="Right" Foreground="#3B9DDA" Width="10" Height="10" Margin="0 10 20 10"/>
+                    </Grid>
+
+                    <Grid Grid.Row="4" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Width="40" Height="40" CornerRadius="50" Background="#6AC9CC">
+                            <Label Content="OP" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="White"/>
+                        </Border>
+
+                        <Label Grid.Column="1" Content="@ Old Pirates" FontWeight="DemiBold" FontSize="15" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Label Grid.Column="1" Content="Max: Yo-ho-ho!" FontSize="12" Foreground="#3B9DDA" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                        <Label Grid.Column="1" Content="12:00" FontSize="12" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="top" Margin="0 0 10 10"/>
+                        <fa:ImageAwesome Grid.Column="1" Icon="Circle" VerticalAlignment="Bottom" HorizontalAlignment="Right" Foreground="#3B9DDA" Width="10" Height="10" Margin="0 10 20 10"/>
+                    </Grid>
+
+                    <Grid Grid.Row="5" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Width="40" Height="40" CornerRadius="50" Background="#63A8E0">
+                            <Label Content="MB" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="White"/>
+                        </Border>
+
+                        <Label Grid.Column="1" Content="Max Bright" FontWeight="DemiBold" FontSize="15" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Label Grid.Column="1" Content="How about some coffee?" FontSize="12" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                        <Label Grid.Column="1" Content="08:00" FontSize="12" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="top" Margin="0 0 10 10"/>
+                        <fa:ImageAwesome Grid.Column="1" Icon="Circle" VerticalAlignment="Bottom" HorizontalAlignment="Right" Foreground="#3B9DDA" Width="10" Height="10" Margin="0 10 20 10"/>
+                    </Grid>
+
+                    <Grid Grid.Row="6" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Width="40" Height="40" CornerRadius="50" Background="#A593E6">
+                            <Label Content="NP" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="White"/>
+                        </Border>
+
+                        <Label Grid.Column="1" Content="Natalie Parker" FontWeight="DemiBold" FontSize="15" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Label Grid.Column="1" Content="OK, great)" FontSize="12" Foreground="Gray" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                        <Label Grid.Column="1" Content="10:00" FontSize="12" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="top" Margin="0 0 10 10"/>
+                        <fa:ImageAwesome Grid.Column="1" Icon="Circle" VerticalAlignment="Bottom" HorizontalAlignment="Right" Foreground="#3B9DDA" Width="10" Height="10" Margin="0 10 20 10"/>
+                    </Grid>
+
+                    <Grid Grid.Row="7" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Width="40" Height="40" CornerRadius="50" Background="#F177AE">
+                            <Label Content="DJ" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Foreground="White"/>
+                        </Border>
+
+                        <Label Grid.Column="1" Content="Davy Jones" FontWeight="DemiBold" FontSize="15" Foreground="Black" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Label Grid.Column="1" Content="Keynote.pdf" FontSize="12" Foreground="#3B9DDA" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                        <Label Grid.Column="1" Content="10:00" FontSize="12" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="top" Margin="0 0 10 10"/>
+                        <fa:ImageAwesome Grid.Column="1" Icon="Circle" VerticalAlignment="Bottom" HorizontalAlignment="Right" Foreground="#3B9DDA" Width="10" Height="10" Margin="0 10 20 10"/>
+                    </Grid>
+
+                </Grid>
+                <!-- Chats Inner Grid initiaize end -->
+            </DockPanel>
+            <!-- Left side Chats panel end -->
+
+        </Grid>
+        <!-- Left side Grid content end -->
+
+
+        <!-- Right side Grid content start -->
+        <Grid Grid.Column="1">
+            
+            <!-- Right side Inner Grid initiaize start -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="300"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!-- Right side Inner Grid initiaize end -->
+
+            <!-- Right side HeaderBar start -->
+            <DockPanel Grid.Row="0" Background="White" Height="60" VerticalAlignment="Top">
+                <Grid>
+                    <!-- Dockpanel Inner Grid initialize start -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Dockpanel Inner Grid initialize end -->
+
+                    <!-- Name and status text start -->
+                    <StackPanel Grid.Column="0" Orientation="Vertical" Width="120" HorizontalAlignment="Left" Margin="10">
+                        <Label Content="Eva Summer" FontSize="18" Padding="0" Foreground="Black" FontWeight="SemiBold"/>
+                        <Label Content="online" FontSize="15" Padding="0" FontWeight="DemiBold" Foreground="#3B9DDA"/>
+                    </StackPanel>
+                    <!-- Name and status text end -->
+
+                    <!-- Search and Ellipsis icons start -->
+                    <fa:ImageAwesome Icon="Search" Grid.Column="1" Height="20" Width="20" Foreground="#A8A8A8"/>
+                    <fa:ImageAwesome Icon="EllipsisV" Grid.Column="2" Height="20" Width="20" Foreground="#A8A8A8"/>
+                    <!-- Search and Ellipsis icons end -->
+                </Grid>
+            </DockPanel>
+            <!-- Right side HeaderBar end -->
+
+            <!-- Right side Message Area start -->
+            <StackPanel Grid.Row="1" Background="#C3C3C3"/>
+            <!-- Right side Message Area end -->
+            
+            <!-- Right side Typing Area start -->
+            <DockPanel Grid.Row="2" VerticalAlignment="Center">
+                <Grid>
+                    <!-- Typing Area inner grid initialize start -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="400"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Typing Area inner grid initialize end -->
+
+                    <!-- Write text and paperclip grid start -->
+                    <Grid Grid.Column="0">
+                        <!-- Write text and paperclip grid initialize start -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <!-- Write text and paperclip grid initialize end -->
+
+                        <fa:ImageAwesome Icon="Paperclip" Grid.Column="0" Height="20" Width="20" Foreground="#A8A8A8"/>
+                        <Label Grid.Column="1" Content="Write a message..." FontSize="18" Foreground="#A8A8A8"/>
+                    </Grid>
+                    <!-- Write text and paperclip grid end -->
+
+                    <!-- Smile and microphone icon grid start -->
+                    <Grid Grid.Column="1">
+                        
+                        <!-- Smile and microphone icon grid initialize start -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <!-- Smile and microphone icon grid initialize end -->
+
+                        <fa:ImageAwesome Grid.Column="0" Icon="SmileOutline" Width="20" Height="20" Foreground="#A8A8A8" />
+                        <fa:ImageAwesome Grid.Column="1" Icon="Microphone" Width="20" Height="20" Foreground="#A8A8A8" />
+
+                    </Grid>
+                    <!-- Smile and microphone icon grid end -->
+                    
+                </Grid>
+            </DockPanel>
+            <!-- Right side Typing Area end -->
+
+        </Grid>
+        <!-- Right side Grid content end -->
+        
+
+        
+
+
+
+    </Grid>
+</Window>
